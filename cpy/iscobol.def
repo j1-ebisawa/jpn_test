@@ -1,5 +1,5 @@
 *>********************************************************************<*
-*>***** Copyright (c) 2005 - 2021 Veryant. Users of isCOBOL      *****<*
+*>***** Copyright (c) 2005 - 2022 Veryant. Users of isCOBOL      *****<*
 *>***** may freely modify and redistribute this program.         *****<*
 *>********************************************************************<*
 
@@ -48,8 +48,8 @@
         88  os-is-linux                          value "Linux".
         88  os-is-aos                            value "aos/vs".
         88  os-is-windows                        values "Windows 95", "Windows 98", "Windows Me".
-        88  os-is-win-nt                         values "Windows NT", "Windows 20", "Windows XP", "Windows Vi", "Windows 7", "WINDOWS", "Windows Se", "Windows 8", "Windows 8.", "Windows 10".
-        88  os-is-win-family                     values "Windows NT", "Windows 95", "Windows 98", "Windows Me", "Windows 20", "Windows XP", "Windows Vi", "WINDOWS", "Windows 7", "Windows Se", "Windows 8", "Windows 8.", "Windows 10".
+        88  os-is-win-nt                         values "Windows NT", "Windows 20", "Windows XP", "Windows Vi", "Windows 7", "WINDOWS", "Windows Se", "Windows 8", "Windows 8.", "Windows 10", "Windows 11".
+        88  os-is-win-family                     values "Windows NT", "Windows 95", "Windows 98", "Windows Me", "Windows 20", "Windows XP", "Windows Vi", "WINDOWS", "Windows 7", "Windows Se", "Windows 8", "Windows 8.", "Windows 10", "Windows 11".
         88  os-is-amos                           value "amos".
         88  os-is-mpe                            value "MPE/iX".
         88  os-is-mpeix                          value "MPE/iX".
@@ -76,15 +76,6 @@
     03  filler                                   pic x.
     03  filler                                   pic x.
         88  is-64-bit                            value "Y".
-
-78 runenv-standalone                             value 1.
-78 runenv-charva                                 value 2.
-78 runenv-remote-call                            value 3.
-78 runenv-thin-client                            value 4.
-78 runenv-web-client                             value 5.
-78 runenv-wd2                                    value 6.
-78 runenv-j2ee                                   value 7.
-78 runenv-mobile                                 value 8.
 
 78  black                                        value 1.
 78  blue                                         value 2.
@@ -127,6 +118,20 @@
 78  bckgrnd-low                                  value 65536.
 78  bckgrnd-high                                 value 131072.
 78  window-bright-white                          value 131328.
+
+78  runenv-standalone                            value 1.
+78  runenv-charva                                value 2.
+78  runenv-remote-call                           value 3.
+78  runenv-thin-client                           value 4.
+78  runenv-web-client                            value 5.
+78  runenv-wd2                                   value 6.
+78  runenv-j2ee                                  value 7.
+78  runenv-mobile                                value 8.
+78  runenv-thin-call-client                      value 9.
+78  runenv-web-call-client                       value 10.
+
+78  cconfig-reset                                value 1.
+78  cconfig-append                               value 9.
 
 78  csys-async                                   value 1.
 78  csys-maximized                               value 4.
@@ -173,6 +178,7 @@
 78  crep-right-trimmed                           value 4.
 
 78  wflush-refresh                               value 1.
+78  wflush-mass-update                           value 64.
 78  wflush-inhibit                               value 256.
 78  wflush-allow                                 value 257.
 78  wflush-disable-ui                            value 512.

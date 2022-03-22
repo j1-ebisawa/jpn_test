@@ -1,5 +1,5 @@
 *>********************************************************************<*
-*>***** Copyright (c) 2005 - 2021 Veryant. Users of isCOBOL      *****<*
+*>***** Copyright (c) 2005 - 2022 Veryant. Users of isCOBOL      *****<*
 *>***** may freely modify and redistribute this program.         *****<*
 *>********************************************************************<*
 
@@ -32,9 +32,16 @@
 78  wbitmap-destroy-imagelist                    value 6.
 78  wbitmap-load-from-client                     value 20.
 78  wbitmap-load-symbol-font                     value 21.
+78  wbitmap-load-symbol-font-ex                  value 22.
 
 78  wbitmap-no-fill                              value 1.
 78  wbitmap-no-download                          value 2.
+
+01  wbitmap-lsf-data.
+    03 wbitmap-lsf-element                       occurs dynamic.
+       05 wbitmap-lsf-font                       handle of font.
+       05 wbitmap-lsf-characters                 pic n any length.
+       05 wbitmap-lsf-color                      pic s9(10).
 
 78  wscale-stretch                               value 0.
 78  wscale-resize-xy                             value 1.
@@ -182,6 +189,8 @@
 78  ntf-pl-search                                value 4107.
 78  ntf-resized                                  value 4114.
 
+78  ntf-iwc-event                                value 17041.
+
 78  msg-sb-thumb                                 value 16389.
 78  msg-sl-thumb                                 value 17001.
 78  msg-validate                                 value 16391.
@@ -246,6 +255,7 @@
 78  msg-deiconified                              value 17033.
 78  msg-finish-sort                              value 17034.
 78  msg-gd-dblclick                              value 17035.
+78  msg-finish-filter                            value 17036.
 
 78  action-cut                                   value 1.
 78  action-copy                                  value 2.

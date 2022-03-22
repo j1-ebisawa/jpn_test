@@ -1,5 +1,5 @@
 *>********************************************************************<*
-*>***** Copyright (c) 2005 - 2021 Veryant. Users of isCOBOL      *****<*
+*>***** Copyright (c) 2005 - 2022 Veryant. Users of isCOBOL      *****<*
 *>***** may freely modify and redistribute this program.         *****<*
 *>********************************************************************<*
 
@@ -101,6 +101,8 @@
 78  efp-bitmap-rollover                          value 4117.
 78  efp-bitmap-trailing-rollover                 value 4118.
 78  efp-notify-change-delay                      value 4119.
+78  efp-text-wrapping                            value 4120.
+78  efp-margin-width                             value 4121.
 
 78  pbs-default-button                           value 1.
 78  pbs-escape-button                            value 2.
@@ -128,7 +130,7 @@
 78  pbp-rollover-color                           value 4100.
 78  pbp-rollover-background-color                value 4101.
 78  pbp-rollover-foreground-color                value 4102.
-
+78  pbp-transparent-color                        value 4103.
 
 78  cbs-transparent                              value 65536.
 78  cbs-bitmap                                   value 32768.
@@ -425,6 +427,7 @@
 78  grp-heading-cursor-color                     value 4129.
 78  grp-sort-types                               value 4130.
 78  grp-filter-types                             value 4131.
+78  grp-last-row-view                            value 4132.
 
 78  tvs-boxed                                    value 1.
 78  tvs-no-box                                   value 2.
@@ -439,6 +442,7 @@
 78  tvs-adjustable-columns                       value 1024.
 78  tvs-reordering-columns                       value 2048.
 78  tvs-sortable-columns                         value 4096.
+78  tvs-flat                                     value 8192.
 
 
 78  tvp-parent                                   value 1.
@@ -499,6 +503,8 @@
 78  wbp-copy-selection                           value 4110.
 78  wbp-select-all                               value 4111.
 78  wbp-clear-selection                          value 4112.
+
+78  iwpp-js-name                                 value 4097.
 
 78  das-short-date                               value 0.
 78  das-century-date                             value 1.

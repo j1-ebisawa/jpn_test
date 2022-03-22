@@ -1,5 +1,5 @@
 *>********************************************************************<*
-*>***** Copyright (c) 2005 - 2021 Veryant. Users of isCOBOL      *****<*
+*>***** Copyright (c) 2005 - 2022 Veryant. Users of isCOBOL      *****<*
 *>***** may freely modify and redistribute this program.         *****<*
 *>********************************************************************<*
 
@@ -48,6 +48,7 @@
 78  winprint-cancel-job                          value 97.
 78  winprint-set-attribute                       value 98.
 78  winprint-set-printer-as                      value 99.
+78  winprint-get-no-async-jobs                   value 100.
 
 78  wprterr-unsupported                          value 0.
 78  wprterr-bad-arg                              value -1.
